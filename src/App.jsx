@@ -9,14 +9,15 @@ function App() {
   return (
     <>
     
-  <div>
       <Navber></Navber>
+      
 
-      Main section
-
-  
-        <Footer></Footer>
-     </div>
+      <div className='grid grid-cols-2 gap-10 max-w-[1200px] mx-auto my-20'>
+        <div className='rounded-md p-7 text-white h-[200px] bg-gray-500'></div>
+        <div className='rounded-md p-7 text-white h-[200px] bg-purple-500'></div>
+      </div>
+      
+      <Footer></Footer>
     </>
   )
 }
