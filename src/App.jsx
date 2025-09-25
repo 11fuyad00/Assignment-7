@@ -3,20 +3,27 @@ import './App.css'
 import Footer from './component/Footer'
 import Navber from './component/Navber'
 
+import { Suspense } from 'react';
+import CustomarTickets from './component/customarTickets/CustomarTickets';
+import Card from './component/Card';
+
 function App() {
  
+
+  const dataPromise = fetch('/data.json').then(res => res.json());
 
   return (
     <>
     
       <Navber></Navber>
       
-
-      <div className='grid grid-cols-2 gap-10 max-w-[1200px] mx-auto my-20'>
-        <div className='rounded-md p-7 text-white h-[200px] bg-gray-500'></div>
-        <div className='rounded-md p-7 text-white h-[200px] bg-purple-500'></div>
-      </div>
+      <Card></Card>
       
+
+      <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
+       <CustomarTickets dataPromise={dataPromise}></CustomarTickets>
+      </Suspense>
+
       <Footer></Footer>
     </>
   )
