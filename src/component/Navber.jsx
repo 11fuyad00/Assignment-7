@@ -9,7 +9,7 @@ const Navber = () => {
     <a className="btn btn-ghost text-2xl text-[#130B2D] font-bold">CS — Ticket System</a>
   </div>
   <div className="flex items-center">
-        <div className='flex items-center gap-8 mr-10 yext-[#131313] list-none'>
+        <div className='hidden md:flex items-center gap-8 mr-10 yext-[#131313] list-none'>
           <li>Home</li>
         <li>FAQ</li>
         <li>Changelog</li>

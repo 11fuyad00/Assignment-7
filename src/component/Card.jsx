@@ -3,8 +3,8 @@ import vectorImg from '../assets/vector1.png'
 
 const Card = ({inProgressCount, resolvedCount}) => {
   return (
-        <div className=' grid grid-cols-2 gap-10 max-w-[1200px] mx-auto my-20'>
-        <div className='rounded-md p-7 text-white h-[200px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] flex '>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1200px] mx-auto my-20'>
+        <div className='rounded-md p-7 text-white h-[200px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] flex'>
               <img 
       className="w-[250px] h-[200px]  mt-[-27px] -ml-7" 
       src={vectorImg} 

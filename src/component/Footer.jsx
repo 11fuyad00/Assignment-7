@@ -2,8 +2,8 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral text-neutral-content">
-      <div className="footer sm:footer-horizontal p-20 max-w-[1300px] mx-auto h-[370px] justify-between">
+    <footer className="bg-neutral text-neutral-content w-full">
+      <div className="footer flex flex-col sm:flex-row p-10 sm:p-20 max-w-[1300px] mx-auto justify-between items-center text-center bg-neutral w-full">
         <nav>
           <h2 className="font-bold text-2xl">CS — Ticket System</h2>
           <br />
